@@ -9,3 +9,6 @@ One example of these will be the following
 $ remoteControl('car')
 $ 'down, down, right, right, select, left, left, up, select, up, right, right, right, select'
 ```
+
+# Image of reference
+![Qwerty Keyboard](./imgs/qwerty.png)
