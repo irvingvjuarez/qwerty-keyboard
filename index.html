@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Qwerty Keyboard</title>
+</head>
+<body>
+  <main class="qwerty">
+    <h2>Qwerty Keyboard</h2>
+  
+    <section class="qwerty__input">
+      <input type="text" placeholder="Type a SINGLE word">
+      <button disabled>Go</button>
+    </section>
+
+    <section class="qwerty__keyboard">
+      <article class="row"></article>
+      <article class="row"></article>
+      <article class="row"></article>
+    </section>
+
+    <section class="qwerty__result">
+      <h2></h2>
+    </section>
+
+    <section class="modal">
+      <div>
+        <p class="modal__message">Invalid characters were found. Try again</p>
+        <button class="modal__button">OK</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./constants.js"></script>
+  <script src="./render-ui.js"></script>
+  <script src="./main.js"></script>
+  <script src="./magic-keyboard.js"></script>
+</body>
+</html>

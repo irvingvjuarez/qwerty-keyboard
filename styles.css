@@ -1,0 +1,129 @@
+:root{
+  --main-shadow: 0px 0px 4px 0px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #3e3edc;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main.qwerty{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-block: 20px;
+  text-align: center;
+}
+section.qwerty__input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 9px;
+  width: 90%;
+  max-width: 900px;
+  margin: 15px auto;
+  border-radius: 9px;
+}
+section.qwerty__input button{
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 9px;
+  padding: 6px;
+  border-radius: 25%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  box-shadow: var(--main-shadow);
+}
+section.qwerty__input input{
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+section.qwerty__keyboard{
+  padding-block: 20px;
+}
+.row{
+  padding-block: 5px;
+}
+.key{
+  padding: 4px;
+  font-size: 18px;
+  margin: 0 2px;
+  border-color: transparent;
+  border-radius: 6px;
+  box-shadow: var(--main-shadow);
+}
+
+section.modal{
+  position: absolute;
+  display: none;
+  place-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+}
+section.modal > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 150px;
+  padding: 12px;
+  background-color: white;
+  border-radius: 9px;
+  color: black;
+}
+.modal__message{
+  font-size: 18px;
+  text-align: start;
+}
+.modal__button{
+  padding: 6px;
+  font-weight: 600;
+}
+
+.hover{
+  color: white;
+  background-color: blue;
+  font-weight: 600;
+}
+.pressed{
+  background-color: rgb(68, 67, 67);
+  box-shadow: none;
+  color: white;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 550px){
+  section.qwerty__keyboard{
+    margin: 30px 0;
+  }
+  .row{
+    padding-block: 10px;
+  }
+  .key{
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
